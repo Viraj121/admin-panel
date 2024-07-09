@@ -5,21 +5,12 @@ import cross_icon from '../Assets/cross_icon.png'
 const ListProduct = () => {
   const [allproducts, setAllProducts] = useState([]);
 
-<<<<<<< HEAD
-  const fetchInfo = () => { 
-    fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts') 
-            .then((res) => res.json()) 
-            .then((data) => setAllProducts(data))
-    }
-
-=======
   const fetchInfo = () => {
     fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts')
       .then((res) => res.json())
       .then((data) => setAllProducts(data))
   }
   
->>>>>>> 51fe277d41fdd95b6f4311eb0cbabc6a6fe05232
   useEffect(() => {
     fetchInfo();
   }, [])
@@ -34,16 +25,9 @@ const ListProduct = () => {
       body: JSON.stringify({ id: id }),
     })
 
-<<<<<<< HEAD
-    fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts') 
-    .then((res) => res.json()) 
-    .then((data) => setAllProducts(data))
-
-=======
     fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts')
       .then((res) => res.json())
       .then((data) => setAllProducts(data))
->>>>>>> 51fe277d41fdd95b6f4311eb0cbabc6a6fe05232
   }
 
   return (
