@@ -6,30 +6,26 @@ const ListProduct = () => {
   const [allproducts, setAllProducts] = useState([]);
 
 <<<<<<< HEAD
-  const fetchInfo = () => {
-    fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts')
-      .then((res) => res.json())
-      .then((data) => setAllProducts(data))
-  }
-=======
   const fetchInfo = () => { 
     fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts') 
             .then((res) => res.json()) 
             .then((data) => setAllProducts(data))
     }
->>>>>>> a1d1e635e966b06dea691df3269efbec0d2a9b9f
 
+=======
+  const fetchInfo = () => {
+    fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts')
+      .then((res) => res.json())
+      .then((data) => setAllProducts(data))
+  }
+  
+>>>>>>> 51fe277d41fdd95b6f4311eb0cbabc6a6fe05232
   useEffect(() => {
     fetchInfo();
   }, [])
 
-<<<<<<< HEAD
-  const removeProduct = async (id) => {
-    await fetch('https://ecommerce-app-backend-5hrm.onrender.com/removeproduct', {
-=======
     const removeProduct = async (id) => {
       await fetch('https://ecommerce-app-backend-5hrm.onrender.com/removeproduct', {
->>>>>>> a1d1e635e966b06dea691df3269efbec0d2a9b9f
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -39,15 +35,15 @@ const ListProduct = () => {
     })
 
 <<<<<<< HEAD
-    fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts')
-      .then((res) => res.json())
-      .then((data) => setAllProducts(data))
-=======
     fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts') 
     .then((res) => res.json()) 
     .then((data) => setAllProducts(data))
->>>>>>> a1d1e635e966b06dea691df3269efbec0d2a9b9f
 
+=======
+    fetch('https://ecommerce-app-backend-5hrm.onrender.com/allproducts')
+      .then((res) => res.json())
+      .then((data) => setAllProducts(data))
+>>>>>>> 51fe277d41fdd95b6f4311eb0cbabc6a6fe05232
   }
 
   return (
